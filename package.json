@@ -3,8 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve Main-Host --configuration production --port 4200",
+    "start:page1": "ng serve page-1 --configuration production --port 4201",
+    "start:page2": "ng serve page-2 --configuration production --port 4202",
+    "start:page3": "ng serve page-3 --configuration production --port 4203",
+    "start:page4": "ng serve page-4 --configuration production --port 4204",
     "build": "ng build",
+    "build-app-shell-lib": "ng build app-shell-lib --configuration development",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -33,6 +38,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^19.1.0",
     "typescript": "~5.7.2"
   }
 }

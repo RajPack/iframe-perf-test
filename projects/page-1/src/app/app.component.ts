@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
 import {
   HeaderComponent,
   FooterComponent,
@@ -14,5 +13,5 @@ import {
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Main-Host';
+  title = 'page-1';
 }
