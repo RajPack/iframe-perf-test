@@ -1,0 +1,65 @@
+.deal-jacket-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.deal-jacket-header {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.deal-jacket-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.deal-jacket-header p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #e9ecef;
+}
+
+section {
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 22px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.summary-item, .info-item, .details-item, .signature-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+  color: #333;
+}
+
+.value {
+  flex: 1;
+  text-align: right;
+  padding-left: 10px;
+  color: #555;
+}
+
+.signature-item .value {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}

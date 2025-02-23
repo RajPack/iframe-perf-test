@@ -13,6 +13,4 @@ import {
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
-  title = 'Main-Host';
-}
+export class AppComponent {}

@@ -1,36 +1,67 @@
-.content-container {
+.dealership-container {
   padding: 20px;
 }
 
-.hero-section {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #f8f9fa;
-}
-
-.cta-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.features-section, .stats-section, .testimonials-section, .contact-section {
-  padding: 20px 0;
-}
-
-.features, .stats, .testimonials {
+.tabs {
   display: flex;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  color: #007bff;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  cursor: pointer;
+  margin-right: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tab-button:hover {
+  background-color: #e9ecef;
+}
+
+.tab-button.active {
+  background-color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  color: #0056b3;
+}
+
+.tab-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.tab-content {
+  display: block;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.feature, .stat, .testimonial {
-  flex: 1;
-  margin: 10px;
-  padding: 20px;
-  background-color: #e9ecef;
+.car-item {
+  width: 45%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
   text-align: center;
+}
+
+.car-item img {
+  width: 100%;
+  height: auto;
+}
+
+.financing-options, .service-details {
+  margin-top: 20px;
 }
 
 .contact-form {

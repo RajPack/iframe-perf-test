@@ -23,7 +23,7 @@
   height: 56px;
 }
 
-.nav-bar ul li:hover {
+.nav-bar ul li:hover, .nav-bar ul li.active {
   /* text-decoration: underline; */
   border-bottom: 4px solid #0276b1;
   height: 56px;

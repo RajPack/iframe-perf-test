@@ -108,10 +108,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/app-shell-lib/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }
@@ -129,9 +126,7 @@
             "outputPath": "dist/page-1",
             "index": "projects/page-1/src/index.html",
             "browser": "projects/page-1/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/page-1/tsconfig.app.json",
             "assets": [
               {
@@ -139,9 +134,7 @@
                 "input": "projects/page-1/public"
               }
             ],
-            "styles": [
-              "projects/page-1/src/styles.css"
-            ],
+            "styles": ["projects/page-1/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -186,10 +179,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/page-1/tsconfig.spec.json",
             "assets": [
               {
@@ -197,9 +187,7 @@
                 "input": "projects/page-1/public"
               }
             ],
-            "styles": [
-              "projects/page-1/src/styles.css"
-            ],
+            "styles": ["projects/page-1/src/styles.css"],
             "scripts": []
           }
         }
@@ -218,9 +206,7 @@
             "outputPath": "dist/page-2",
             "index": "projects/page-2/src/index.html",
             "browser": "projects/page-2/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/page-2/tsconfig.app.json",
             "assets": [
               {
@@ -228,9 +214,7 @@
                 "input": "projects/page-2/public"
               }
             ],
-            "styles": [
-              "projects/page-2/src/styles.css"
-            ],
+            "styles": ["projects/page-2/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -275,10 +259,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/page-2/tsconfig.spec.json",
             "assets": [
               {
@@ -286,9 +267,7 @@
                 "input": "projects/page-2/public"
               }
             ],
-            "styles": [
-              "projects/page-2/src/styles.css"
-            ],
+            "styles": ["projects/page-2/src/styles.css"],
             "scripts": []
           }
         }
@@ -307,9 +286,7 @@
             "outputPath": "dist/page-3",
             "index": "projects/page-3/src/index.html",
             "browser": "projects/page-3/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/page-3/tsconfig.app.json",
             "assets": [
               {
@@ -317,9 +294,7 @@
                 "input": "projects/page-3/public"
               }
             ],
-            "styles": [
-              "projects/page-3/src/styles.css"
-            ],
+            "styles": ["projects/page-3/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -336,7 +311,7 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "media"
             },
             "development": {
               "optimization": false,
@@ -364,10 +339,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/page-3/tsconfig.spec.json",
             "assets": [
               {
@@ -375,9 +347,7 @@
                 "input": "projects/page-3/public"
               }
             ],
-            "styles": [
-              "projects/page-3/src/styles.css"
-            ],
+            "styles": ["projects/page-3/src/styles.css"],
             "scripts": []
           }
         }
@@ -396,9 +366,7 @@
             "outputPath": "dist/page-4",
             "index": "projects/page-4/src/index.html",
             "browser": "projects/page-4/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/page-4/tsconfig.app.json",
             "assets": [
               {
@@ -406,9 +374,7 @@
                 "input": "projects/page-4/public"
               }
             ],
-            "styles": [
-              "projects/page-4/src/styles.css"
-            ],
+            "styles": ["projects/page-4/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -425,7 +391,7 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "media"
             },
             "development": {
               "optimization": false,
@@ -453,10 +419,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/page-4/tsconfig.spec.json",
             "assets": [
               {
@@ -464,9 +427,7 @@
                 "input": "projects/page-4/public"
               }
             ],
-            "styles": [
-              "projects/page-4/src/styles.css"
-            ],
+            "styles": ["projects/page-4/src/styles.css"],
             "scripts": []
           }
         }

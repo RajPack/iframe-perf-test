@@ -1,67 +1,164 @@
-<div class="content-container">
-  <section class="hero-section">
-    <h1>Welcome to Our Web App</h1>
-    <p>Your one-stop solution for all your needs.</p>
-    <button class="cta-button">Get Started</button>
-  </section>
+<div class="dealership-container">
+  <div class="tabs">
+    <button
+      class="tab-button"
+      [class.active]="activeTab === 'inventory'"
+      (click)="openTab('inventory')"
+    >
+      Inventory
+    </button>
+    <button
+      class="tab-button"
+      [class.active]="activeTab === 'financing'"
+      (click)="openTab('financing')"
+    >
+      Financing
+    </button>
+    <button
+      class="tab-button"
+      [class.active]="activeTab === 'services'"
+      (click)="openTab('services')"
+    >
+      Services
+    </button>
+    <button
+      class="tab-button"
+      [class.active]="activeTab === 'contact'"
+      (click)="openTab('contact')"
+    >
+      Contact
+    </button>
+  </div>
 
-  <section class="features-section">
-    <h2>Features</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>Feature 1</h3>
-        <p>Details about feature 1.</p>
+  <div id="inventory" class="tab-content" *ngIf="activeTab === 'inventory'">
+    <h2>Inventory</h2>
+    <p>
+      Explore our wide range of cars available for sale. We offer a variety of
+      makes and models to suit your needs.
+    </p>
+    <div class="car-list">
+      <div class="car-item">
+        <img src="assets/car1.jpg" alt="Car Model 1" />
+        <h3>Car Model 1</h3>
+        <p>Price: $20,000</p>
+        <p>
+          Description: A reliable and fuel-efficient sedan with modern features.
+        </p>
       </div>
-      <div class="feature">
-        <h3>Feature 2</h3>
-        <p>Details about feature 2.</p>
+      <div class="car-item">
+        <img src="assets/car2.jpg" alt="Car Model 2" />
+        <h3>Car Model 2</h3>
+        <p>Price: $25,000</p>
+        <p>
+          Description: A stylish SUV with ample space and advanced safety
+          features.
+        </p>
       </div>
-      <div class="feature">
-        <h3>Feature 3</h3>
-        <p>Details about feature 3.</p>
+      <div class="car-item">
+        <img src="assets/car3.jpg" alt="Car Model 3" />
+        <h3>Car Model 3</h3>
+        <p>Price: $30,000</p>
+        <p>
+          Description: A sporty coupe with high performance and sleek design.
+        </p>
+      </div>
+      <div class="car-item">
+        <img src="assets/car4.jpg" alt="Car Model 4" />
+        <h3>Car Model 4</h3>
+        <p>Price: $35,000</p>
+        <p>
+          Description: A luxury sedan with premium features and exceptional
+          comfort.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="stats-section">
-    <h2>Statistics</h2>
-    <div class="stats">
-      <div class="stat">
-        <h3>100+</h3>
-        <p>Happy Clients</p>
-      </div>
-      <div class="stat">
-        <h3>200+</h3>
-        <p>Projects Completed</p>
-      </div>
-      <div class="stat">
-        <h3>300+</h3>
-        <p>Hours of Support</p>
-      </div>
+  <div id="financing" class="tab-content" *ngIf="activeTab === 'financing'">
+    <h2>Financing</h2>
+    <p>
+      We offer flexible financing options to help you get the car you want. Our
+      financing plans include:
+    </p>
+    <ul>
+      <li>Low-interest rates</li>
+      <li>Flexible payment terms</li>
+      <li>Quick approval process</li>
+      <li>Special offers for first-time buyers</li>
+    </ul>
+    <div class="financing-options">
+      <h3>Option 1: Standard Financing</h3>
+      <p>
+        Details: Low-interest rates with flexible payment terms. Suitable for
+        most buyers.
+      </p>
+      <h3>Option 2: Lease Financing</h3>
+      <p>
+        Details: Lease a car with lower monthly payments and the option to buy
+        at the end of the lease term.
+      </p>
+      <h3>Option 3: Bad Credit Financing</h3>
+      <p>
+        Details: Special financing options for buyers with less-than-perfect
+        credit scores.
+      </p>
     </div>
-  </section>
+  </div>
 
-  <section class="testimonials-section">
-    <h2>Testimonials</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <p>"This is the best service I have ever used!"</p>
-        <h4>- John Doe</h4>
-      </div>
-      <div class="testimonial">
-        <p>"Highly recommend to everyone."</p>
-        <h4>- Jane Smith</h4>
-      </div>
+  <div id="services" class="tab-content" *ngIf="activeTab === 'services'">
+    <h2>Services</h2>
+    <p>
+      Our dealership offers a range of services to keep your car in top
+      condition. Our services include:
+    </p>
+    <ul>
+      <li>Regular maintenance and check-ups</li>
+      <li>Oil changes</li>
+      <li>Tire rotations</li>
+      <li>Brake inspections</li>
+      <li>Engine diagnostics</li>
+    </ul>
+    <div class="service-details">
+      <h3>Service 1: Regular Maintenance</h3>
+      <p>
+        Details: Comprehensive maintenance services to ensure your car runs
+        smoothly.
+      </p>
+      <h3>Service 2: Oil Changes</h3>
+      <p>
+        Details: Quick and efficient oil change services to keep your engine
+        healthy.
+      </p>
+      <h3>Service 3: Tire Services</h3>
+      <p>
+        Details: Tire rotations, alignments, and replacements to ensure safe
+        driving.
+      </p>
+      <h3>Service 4: Brake Services</h3>
+      <p>
+        Details: Thorough brake inspections and repairs to keep your car safe.
+      </p>
+      <h3>Service 5: Engine Diagnostics</h3>
+      <p>Details: Advanced diagnostics to identify and fix engine issues.</p>
     </div>
-  </section>
+  </div>
 
-  <section class="contact-section">
-    <h2>Contact Us</h2>
+  <div id="contact" class="tab-content" *ngIf="activeTab === 'contact'">
+    <h2>Contact</h2>
+    <p>
+      Get in touch with us for any inquiries or to schedule a test drive. You
+      can reach us at:
+    </p>
+    <ul>
+      <li>Email: infocardealership.com</li>
+      <li>Phone: +123 456 7890</li>
+      <li>Address: 123 Main St, Anytown, CA 12345</li>
+    </ul>
     <form class="contact-form">
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
       <textarea placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-  </section>
+  </div>
 </div>
