@@ -1,4 +1,4 @@
-.deal-jacket-container {
+.performance-container {
   padding: 20px;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -6,7 +6,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.deal-jacket-header {
+.performance-header {
   text-align: center;
   margin-bottom: 20px;
   background-color: #007bff;
@@ -15,23 +15,23 @@
   border-radius: 10px 10px 0 0;
 }
 
-.deal-jacket-header h1 {
+.performance-header h1 {
   margin: 0;
   font-size: 28px;
 }
 
-.deal-jacket-header p {
+.performance-header p {
   margin: 5px 0 0;
   font-size: 16px;
   color: #e9ecef;
 }
 
-section {
-  margin-bottom: 20px;
+.performance-summary, .sales-chart, .top-salespeople, .customer-reviews {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -41,7 +41,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-.summary-item, .info-item, .details-item, .signature-item {
+.summary-item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
@@ -59,7 +59,42 @@ h2 {
   color: #555;
 }
 
-.signature-item .value {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
+.salespeople-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.salespeople-table th, .salespeople-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.salespeople-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.salespeople-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.salespeople-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.review-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.reviewer {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #555;
 }

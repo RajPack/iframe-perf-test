@@ -9,6 +9,10 @@
     "start:page3": "ng serve page-3 --configuration production --port 4203",
     "start:page4": "ng serve page-4 --configuration production --port 4204",
     "build": "ng build",
+    "build:page1": "ng build page-1 --configuration production",
+    "build:page2": "ng build page-2 --configuration production",
+    "build:page3": "ng build page-3 --configuration production",
+    "build:page4": "ng build page-4 --configuration production",
     "build-app-shell-lib": "ng build app-shell-lib --configuration development",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
